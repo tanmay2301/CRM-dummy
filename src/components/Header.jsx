@@ -8,8 +8,6 @@ function Header(){
                 </div>
                 <hr /> 
             </nav>  
-                
-                               
         </>
     )
 }
