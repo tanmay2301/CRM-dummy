@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import databaseCard from "../api"
+import database from "../api"
 
 export default function Cards() {
-    const [cards, setCards] = useState(databaseCard.contact)
+    const [cards, setCards] = useState(database.data)
 
     return (
         <section>
