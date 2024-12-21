@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import databaseCard from "../api"
 
 export default function Cards() {
-    const [cards, setCards] = useState(databaseCard.contact)
+    const [cards, setCards] = useState(databaseCard.contacts)
 
     return (
         <section>
