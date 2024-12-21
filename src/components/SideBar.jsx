@@ -4,7 +4,7 @@ function SideBar() {
             <div className="sidebar">
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-list"></i>
                     </div>
                     <li className="sidebar-list">Dashboard</li>
                 </div>
