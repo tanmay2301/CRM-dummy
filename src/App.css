@@ -162,15 +162,14 @@ section {
   color: #777;
 }
 
-.con-manage{
+.con-manage {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  max-width: 98.5%; 
-  
+  justify-content: space-between;
+  align-items: center;
+  max-width: 98.5%;
 }
 
-.con-filter{
+.con-filter {
   display: flex;
   background-color: #f5f7f7;
   padding: 5px 0px 5px;
@@ -179,10 +178,9 @@ section {
   border-radius: 5px;
   margin-left: 12.5rem;
   align-items: center;
-  
 }
 
-.con-items{
+.con-items {
   list-style: none;
   padding: 8px 24px;
   color: #878787;
@@ -193,26 +191,88 @@ section {
   transition: all 0.2s ease;
 }
 
-.con-add{
+.con-add {
   color: white;
   background-color: black;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  
 }
 
-.con-add:hover{
+.con-add:hover {
   cursor: pointer;
   opacity: 0.85;
 }
 
 .con-items.active {
   background-color: white;
-  color: black; 
+  color: black;
   padding-left: 10px;
   padding-right: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
-  
+.contact-ui table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.contact-ui th,
+.contact-ui td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.contact-ui th {
+  background-color: #f4f4f4;
+  color: #878787;
+  font-weight: bold;
+}
+
+.contact-ui th:nth-child(1),
+td:nth-child(1) {
+  width: 20%;
+}
+
+.contact-ui tr:hover {
+  background-color: #e1e1e1;
+}
+
+.nameIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #020069;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.type {
+  color: #c9f9c3;
+  background-color: #006400;
+}
+
+.status {
+  color: #ffd3d3;
+  background-color: #8B4513;
+}
+
+.contact-ui td.type,
+.contact-ui td.status {
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  width: 100px;
 }
