@@ -12,12 +12,12 @@ function App() {
   const [contacts, setContacts] = useState(database.contacts);
 
     const addContact = (newContact) => {
-        // Add current date as lastContact
+        
         const currentDate = new Date().toLocaleDateString();
         const contactWithDefaults = {
             ...newContact,
-            status: 'Active', // Default status
-            type: 'General', // Default type
+            status: 'Active', 
+            type: 'General', 
             lastContact: currentDate
         };
         
