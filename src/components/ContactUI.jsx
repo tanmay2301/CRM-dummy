@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import database from "../api"
+import React, { useState } from "react";
+import database from "../api";
 
 export default function ContactUI() {
     const [contacts, setContacts] = useState(database.contacts);
@@ -8,7 +8,7 @@ export default function ContactUI() {
         const nameParts = name.split(" ");
         const initials = nameParts.map(part => part[0]).join("");
         return initials;
-    }
+    };
 
     return (
         <section className="contact-ui">
