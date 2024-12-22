@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import database from "../api";
 
-export default function ContactUI() {
-    const [contacts, setContacts] = useState(database.contacts);
+export default function ContactUI({contacts}) {
+   
 
     const getInitials = (name) => {
         const nameParts = name.split(" ");
