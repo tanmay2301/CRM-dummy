@@ -3,7 +3,7 @@ function Header(){
         <>
             <nav className="navbar">
                 <div className="navbar-content">
-                    <i class="fa-solid fa-chart-line"></i>
+                    <i className="fa-solid fa-chart-line"></i>
                     <h1>LaunchSync</h1>
                 </div>
                 <hr /> 

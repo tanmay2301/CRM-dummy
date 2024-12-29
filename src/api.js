@@ -17,7 +17,7 @@ const database = {
         {
             name: "Michael Chen",
             email: "mchen@startup.co",
-            company: "StartupCo",
+            company: "StartupCo",       
             type: "partners",
             status: "meeting scheduled",
             lastContact: "3/19/2024",

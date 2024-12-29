@@ -1,42 +1,56 @@
+import {Link} from 'react-router-dom'
+
 function SideBar() {
     return (
         <>
             <div className="sidebar">
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-solid fa-list"></i>
+                        <i className="fa-solid fa-list"></i>
                     </div>
-                    <li className="sidebar-list">Dashboard</li>
+                    <Link to="/Dashboard"  style={{ textDecoration: 'none' }}>
+                        <li className="sidebar-list">Dashboard</li>
+                    </Link>
                 </div>
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-solid fa-users"></i>
+                        <i className="fa-solid fa-users"></i>
                     </div>
-                    <li className="sidebar-list">Contacts</li>
+                    <Link to="/Contacts"  style={{ textDecoration: 'none' }}>
+                        <li className="sidebar-list">Contacts</li>
+                    </Link>
                 </div>
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-regular fa-message"></i>
+                        <i className="fa-regular fa-message"></i>
                     </div>
-                    <li className="sidebar-list">Messages</li>
+                    <Link to="/Messages"  style={{ textDecoration: 'none' }}>
+                        <li className="sidebar-list">Messages</li>
+                    </Link>
                 </div>
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-solid fa-calendar"></i>
+                        <i className="fa-solid fa-calendar"></i>
                     </div>
-                    <li className="sidebar-list">Calendar</li>
+                    <Link to="/Calendar"  style={{ textDecoration: 'none' }}>
+                        <li className="sidebar-list">Calendar</li>
+                    </Link>
                 </div>
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-solid fa-signal"></i>
+                        <i className="fa-solid fa-signal"></i>
                     </div>
-                    <li className="sidebar-list">Analytics</li>
+                    <Link to="/Analytics"  style={{ textDecoration: 'none' }}>
+                        <li className="sidebar-list">Analytics</li>
+                    </Link>
                 </div>
                 <div className="sidebar-items">
                     <div className="sidebar-logo">
-                        <i class="fa-solid fa-gear"></i>
+                        <i className="fa-solid fa-gear"></i>
                     </div>
-                    <li className="sidebar-list">Settings</li>
+                    <Link to="/Settings"  style={{ textDecoration: 'none' }}>
+                        <li className="sidebar-list">Settings</li>
+                    </Link>
                 </div>
 
 
