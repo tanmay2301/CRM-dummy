@@ -1,6 +1,6 @@
 function Settings(){
     return(
-        <div>You have 0 msgs (loner)</div>
+        <div>You have 0 settings (loner)</div>
     )
 }
 
