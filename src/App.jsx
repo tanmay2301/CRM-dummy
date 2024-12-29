@@ -1,11 +1,11 @@
 import './App.css'
 import { useState } from 'react'
 import database from './api'
-import Header from './components/Header'
-import SideBar from './components/SideBar'
-import Cards from './components/Cards'
-import ContactUI from './components/ContactUI'
-import ContactManager from './components/ContactManager'
+import Header from './custom-components/Header'
+import SideBar from './custom-components/SideBar'
+import Cards from './custom-components/Cards'
+import ContactUI from './custom-components/ContactUI'
+import ContactManager from './custom-components/ContactManager'
 
 
 

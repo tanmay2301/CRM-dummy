@@ -1,6 +1,12 @@
+import SideBar from "./custom-components/SideBar"
+import Header from "./custom-components/Header"
+
 function Calendar(){
     return(
-        <div>Cal Cal</div>
+        <>
+            <Header />
+            <SideBar />
+        </>
     )
 }
 

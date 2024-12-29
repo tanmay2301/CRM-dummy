@@ -1,8 +1,14 @@
+import Header from './custom-components/Header'
+import SideBar from './custom-components/SideBar'
+
+
 function Analytics(){
     return(
-        <div>
-            Anal
-        </div>
+        <>
+             <Header />
+             <SideBar />
+           
+        </>
     )
 }
 

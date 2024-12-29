@@ -1,6 +1,12 @@
+import Header from "./custom-components/Header"
+import SideBar from "./custom-components/SideBar"
+
 function Settings(){
     return(
-        <div>You have 0 settings (loner)</div>
+        <>
+            <Header />
+            <SideBar />
+        </>
     )
 }
 
