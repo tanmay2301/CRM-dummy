@@ -16,7 +16,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .main {
@@ -101,7 +101,7 @@ hr {
 }
 
 .sidebar-items:hover {
-  background-color:  #e5e4e4;
+  background-color: #e5e4e4;
   cursor: pointer;
   color: black;
   border-radius: 5px;
@@ -119,62 +119,6 @@ section {
   padding: 20px;
   margin-left: 180px;
   justify-content: flex-start;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  border: 1px solid #e5e5e5;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  width: 280px;
-  height: 150px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.card i,
-.card h3 {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.card i {
-  font-size: 16px;
-  color: #555;
-  align-self: flex-end;
-  flex-shrink: 0;
-}
-
-.card h3 {
-  font-size: 18px;
-  margin: 0;
-  color: #000000;
-  font-weight: 600;
-}
-
-.card h1 {
-  font-size: 22px;
-  margin: 5px 0;
-  color: #000000;
-  font-weight: 700;
-}
-
-.card h5 {
-  font-size: 14px;
-  font-weight: 100;
-  margin: 5px 0;
-  color: #777;
-  font-weight: 500;
 }
 
 .con-manage {
@@ -227,71 +171,6 @@ section {
   padding-left: 10px;
   padding-right: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.contact-ui table {
-  width: 100%;
-  margin: 0 auto;
-  font-size: 14px;
-  text-align: center;
-  border-collapse: collapse;
-}
-
-.contact-ui th,
-.contact-ui td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
-
-.contact-ui th {
-  background-color: #f4f4f4;
-  color: #878787;
-  font-weight: bold;
-}
-
-.contact-ui th:nth-child(1),
-td:nth-child(1) {
-  width: 20%;
-}
-
-.contact-ui tr:hover {
-  background-color: #e1e1e1;
-}
-
-.nameIcon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #020069;
-  color: #fff;
-  text-align: center;
-  line-height: 24px;
-  font-size: 12px;
-  margin-right: 8px;
-}
-
-.type {
-  color: #c9f9c3;
-  background-color: #006400;
-}
-
-.status {
-  color: #ffd3d3;
-  background-color: #8B4513;
-}
-
-.contact-ui td.type,
-.contact-ui td.status {
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 30px;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-  width: 100px;
 }
 
 .modal-overlay {
@@ -419,7 +298,16 @@ td:nth-child(1) {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -445,6 +333,14 @@ td:nth-child(1) {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -452,8 +348,8 @@ td:nth-child(1) {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
-
