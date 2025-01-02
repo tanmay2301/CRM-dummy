@@ -28,7 +28,8 @@ import Header from './custom-components/Header'
 import SideBar from './custom-components/SideBar'
 
 
-const chartConfig = {
+const chartConfig = { 
+
   desktop: {
     label: "Desktop",
     color: "#FEC20C",

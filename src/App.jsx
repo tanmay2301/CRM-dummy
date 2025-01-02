@@ -12,6 +12,7 @@ import ContactManager from './custom-components/ContactManager'
 function App() {
 
   const [contacts, setContacts] = useState(database.contacts);
+  const [activeFilter, setActiveFilter] = useState('All');
 
     const addContact = (newContact) => {
         
@@ -27,16 +28,27 @@ function App() {
     };
 
 
+    const filteredContacts = contacts.filter(
+      (contact) =>
+        activeFilter === "All" ||
+        (activeFilter === "Media" && contact.type === "media") ||
+        (activeFilter === "Partners" && contact.type === "partners") ||
+        (activeFilter === "Beta Users" && contact.type === "beta")
+    );
+  
+    return (
+      <div className="main">
+        <Header />
+        <SideBar />
+        <Cards />
+        <ContactManager
+          onAddContact={addContact}
+          activeFilter={activeFilter}
+          setActiveFilter={setActiveFilter}
+        />
+        <ContactUI contacts={filteredContacts} />
+      </div>
+    );
+  }
 
-  return (
-    <div className="main">
-      <Header />
-      <SideBar />
-      <Cards />
-      <ContactManager onAddContact={addContact} />
-      <ContactUI contacts={contacts} />
-    </div>
-  )
-
-}
-export default App
+  export default App;
