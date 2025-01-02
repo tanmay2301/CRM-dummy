@@ -61,7 +61,7 @@ function Contacts() {
                 <SideBar />
                 <main className="flex-1 overflow-auto p-4">
                     <ContactManager />
-                    <section className="contact-ui w- h-full">
+                    <section className="contact-ui w-9/10 h-full">
                         <Table>
                             <TableHeader>
                                 <TableRow>
