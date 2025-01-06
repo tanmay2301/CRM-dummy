@@ -49,7 +49,7 @@ export default function ContactUI({ contacts }) {
     };
 
     return (
-        <section className="contact-ui p-4 ">
+        <section className="contact-ui p-4 overflow-x-auto">
             <Table>
                 <TableHeader>
                     <TableRow>
@@ -63,7 +63,7 @@ export default function ContactUI({ contacts }) {
                 </TableHeader>
                 <TableBody>
                     {contacts.map((contact) => (
-                        <TableRow key={contact.id}  className="hover:bg-gray-200 transition-colors">
+                        <TableRow key={contact.id} className="hover:bg-gray-200 transition-colors">
                             <TableCell>
                                 <div className="flex items-center">
                                     <div
@@ -80,18 +80,14 @@ export default function ContactUI({ contacts }) {
                             <TableCell>{contact.company}</TableCell>
                             <TableCell>
                                 <span
-                                    className={`px-2 py-1 rounded-full ${getTypeClass(
-                                        contact.type
-                                    )}`}
+                                    className={`px-2 py-1 rounded-full ${getTypeClass(contact.type)}`}
                                 >
                                     {contact.type}
                                 </span>
                             </TableCell>
                             <TableCell>
                                 <span
-                                    className={`px-2 py-1 rounded-full ${getStatusClass(
-                                        contact.status
-                                    )}`}
+                                    className={`px-2 py-1 rounded-full ${getStatusClass(contact.status)}`}
                                 >
                                     {contact.status}
                                 </span>
