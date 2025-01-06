@@ -7,8 +7,8 @@ function ContactManager({ onAddContact, activeFilter, setActiveFilter }) {
     email: '',
     phone: '',
     company: '',
-    type: '',  // New field
-    status: '',  // New field
+    type: '',
+    status: '',
   });
 
   const filters = ['All', 'Media', 'Partners', 'Beta Users'];
@@ -30,8 +30,8 @@ function ContactManager({ onAddContact, activeFilter, setActiveFilter }) {
       email: '',
       phone: '',
       company: '',
-      type: '',  // Reset new field
-      status: '',  // Reset new field
+      type: '',
+      status: '',
     });
   };
 
@@ -105,30 +105,41 @@ function ContactManager({ onAddContact, activeFilter, setActiveFilter }) {
                   onChange={handleInputChange}
                 />
               </div>
-            
+
               <div className="form-group">
                 <label htmlFor="type">Type</label>
-                <input
-                  type="text"
+                <select
                   id="type"
                   name="type"
                   value={formData.type}
                   onChange={handleInputChange}
                   required
-                />
+                  className="w-full h-10 p-2 border border-gray-300 rounded"
+                >
+                  <option value="">Select Type</option>
+                  <option value="media">Media</option>
+                  <option value="partners">Partners</option>
+                  <option value="beta">Beta</option>
+                </select>
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="status">Status</label>
-                <input
-                  type="text"
+                <select
                   id="status"
                   name="status"
                   value={formData.status}
                   onChange={handleInputChange}
                   required
-                />
+                  className="w-full h-10 p-2 border border-gray-300 rounded"
+                >
+                  <option value="">Select Status</option>
+                  <option value="contacted">Contacted</option>
+                  <option value="meeting scheduled">Meeting Scheduled</option>
+                  <option value="onboarded">Onboarded</option>
+                </select>
               </div>
+
               <div className="modal-footer">
                 <button
                   type="button"
