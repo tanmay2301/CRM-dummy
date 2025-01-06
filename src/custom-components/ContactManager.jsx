@@ -85,17 +85,6 @@ function ContactManager({ onAddContact, activeFilter, setActiveFilter }) {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
                 <label htmlFor="company">Company</label>
                 <input
                   type="text"
@@ -141,13 +130,6 @@ function ContactManager({ onAddContact, activeFilter, setActiveFilter }) {
               </div>
 
               <div className="modal-footer">
-                <button
-                  type="button"
-                  className="cancel-button"
-                  onClick={() => setIsModalOpen(false)}
-                >
-                  Cancel
-                </button>
                 <button type="submit" className="submit-button">
                   Add Contact
                 </button>
