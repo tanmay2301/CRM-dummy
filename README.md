@@ -4,7 +4,7 @@ LaunchSync is a sleek and intuitive **Customer Relationship Management (CRM)** s
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 - **Dashboard:** Get a visual overview of key metrics and recent activities.
 - **Contact Management:** Easily organize, update, and search for customer information.
@@ -14,7 +14,7 @@ LaunchSync is a sleek and intuitive **Customer Relationship Management (CRM)** s
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend:** React.js, Tailwind CSS, React Router
 - **Calendar:** React Calendar
