@@ -2,7 +2,6 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import Analytics from './Analytics.jsx'
 import Contacts from './Contacts.jsx'
-import Messages from './Messages.jsx'
 import Calendar from './Calendar.jsx'
 import Settings from './Settings.jsx'
 
@@ -22,11 +21,6 @@ const router = createBrowserRouter([
     {
         path: '/Contacts',
         element: <Contacts />
-    },
-
-    {
-        path: '/Messages',
-        element: <Messages />
     },
 
     {

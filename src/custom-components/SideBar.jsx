@@ -1,67 +1,52 @@
-import {Link} from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 function SideBar() {
     return (
         <>
             <div className="sidebar">
-                <Link to="/Dashboard"  style={{ textDecoration: 'none' }}>  
+                <NavLink to="/Dashboard" style={{ textDecoration: 'none' }} activeClassName="active">
                     <div className="sidebar-items">
                         <div className="sidebar-logo">
                             <i className="fa-solid fa-list"></i>
                         </div>
-                            <li className="sidebar-list">Dashboard</li>
-                        
+                        <li className="sidebar-list">Dashboard</li>
                     </div>
-                </Link>
-                <Link to="/Contacts"  style={{ textDecoration: 'none' }}>
+                </NavLink>
+                <NavLink to="/Contacts" style={{ textDecoration: 'none' }} activeClassName="active">
                     <div className="sidebar-items">
                         <div className="sidebar-logo">
                             <i className="fa-solid fa-users"></i>
                         </div>
-                            <li className="sidebar-list">Contacts</li>
-                        
+                        <li className="sidebar-list">Contacts</li>
                     </div>
-                </Link>
-                <Link to="/Messages"  style={{ textDecoration: 'none' }}>
-                    <div className="sidebar-items">
-                        <div className="sidebar-logo">
-                            <i className="fa-regular fa-message"></i>
-                        </div>
-                            <li className="sidebar-list">Messages</li>
-                        
-                    </div>
-                </Link>
-                <Link to="/Calendar"  style={{ textDecoration: 'none' }}>
+                </NavLink>
+                <NavLink to="/Calendar" style={{ textDecoration: 'none' }} activeClassName="active">
                     <div className="sidebar-items">
                         <div className="sidebar-logo">
                             <i className="fa-solid fa-calendar"></i>
                         </div>
-                            <li className="sidebar-list">Calendar</li>
-                        
+                        <li className="sidebar-list">Calendar</li>
                     </div>
-                </Link>
-                <Link to="/Analytics"  style={{ textDecoration: 'none' }}>
+                </NavLink>
+                <NavLink to="/Analytics" style={{ textDecoration: 'none' }} activeClassName="active">
                     <div className="sidebar-items">
                         <div className="sidebar-logo">
                             <i className="fa-solid fa-signal"></i>
                         </div>
-                            <li className="sidebar-list">Analytics</li>
+                        <li className="sidebar-list">Analytics</li>
                     </div>
-                </Link>
-                <Link to="/Settings"  style={{ textDecoration: 'none' }}>
+                </NavLink>
+                <NavLink to="/Settings" style={{ textDecoration: 'none' }} activeClassName="active">
                     <div className="sidebar-items">
                         <div className="sidebar-logo">
                             <i className="fa-solid fa-gear"></i>
                         </div>
-                            <li className="sidebar-list">Settings</li>
-                        
+                        <li className="sidebar-list">Settings</li>
                     </div>
-                </Link>
-
-
+                </NavLink>
             </div>
         </>
-    )
+    );
 }
 
-export default SideBar  
+export default SideBar;

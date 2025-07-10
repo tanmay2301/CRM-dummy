@@ -3,7 +3,7 @@ const database = {
         { id: 1, title: "Total Contacts", count: 245, description: "+4 from last week", iconClass: "fa-solid fa-user-group" },
         { id: 2, title: "Media Contacts", count: 54, description: "12 pending outreach", iconClass: "fa-solid fa-note-sticky" },
         { id: 3, title: "Beta Users", count: 127, description: "89 active users", iconClass: "fa-solid fa-user-check" },
-        { id: 4, title: "Response Rate", count: "32%", description: "+2% from last month", iconClass: "fa-regular fa-message" }
+        { id: 4, title: "Response Rate", count: "32%", description: "+2% from last month", iconClass: "fa-regular fa-message" },
     ],
     contacts: [
         {
@@ -30,7 +30,31 @@ const database = {
             status: "onboarded",
             lastContact: "3/18/2024",
         },
+        {
+            name: "David Brown",
+            email: "david.b@freelance.com",
+            company: "Freelance",
+            type: "beta",
+            status: "active",
+            lastContact: "3/15/2024",
+        },
+        {
+            name: "Linda Green",
+            email: "linda.green@startuphub.com",
+            company: "StartupHub",
+            type: "partners",
+            status: "meeting scheduled",
+            lastContact: "3/12/2024",
+        },
+        {
+            name: "James White",
+            email: "james.white@freelance.com",
+            company: "Freelance",
+            type: "beta",
+            status: "active",
+            lastContact: "3/11/2024",
+        },
     ],
 }
 
-export default database
+export default database;

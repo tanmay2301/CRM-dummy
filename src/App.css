@@ -100,14 +100,14 @@ hr {
   width: 15px;
 }
 
-.sidebar-items:hover {
+.sidebar-items:hover, .sidebar-items.active {
   background-color: #e5e4e4;
   cursor: pointer;
   color: black;
   border-radius: 5px;
 }
 
-.sidebar-items:hover li {
+.sidebar-items:hover li, .sidebar-items.active li {
   color: black;
 }
 
